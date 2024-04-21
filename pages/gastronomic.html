@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Гастро</title>
+    <meta name="description" content="Смачна їжа в Україні">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__top-box">
+                <div class="header__logo">
+                    <a href="../index.html" class="header__link">
+                        <img src="../img/logo.png" alt="logo title" class="header__img" />
+                        <span class="header__title">
+                            Rout mountain
+                        </span>
+                    </a>
+                </div>
+                <div class="header__contacts">
+                    <a href="tel:380962222222" class="phone header__phone">
+                        +38 (096) 222-22-22
+                    </a>
+                    <ul class="header__social">
+                        <li class="header__social__item">
+                            <a href="https://facebook.com/" class="header__social__link" target="_blank">
+                                <i class="fa-brands fa-facebook">
+                                </i>
+                            </a>
+                        </li>
+                        <li class="header__social__item">
+                            <a href="https://instagram.com/" class="header__social__link" target="_blank">
+                                <i class="fa-brands fa-instagram">
+                                </i>
+                            </a>
+                        </li>
+                        <li class="header__social__item">
+                            <a href="https://twitter.com/" class="header__social__link" target="_blank">
+                                <i class="fa-brands fa-x-twitter">
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__toogle">
+                    <input type="checkbox" name="menu" id="header__menu" class="header__menu-check" />
+                    <label for="header__menu" class="header__menu-label">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <nav class="header__menu">
+                        <ul class="header__menu__list">
+                            <li class="header__menu__item">
+                                <a href="./spa.html" class="header__menu__link">
+                                    Спа-релакс
+                                </a>
+                            </li>
+                            <li class="header__menu__item">
+                                <a href="./hiking.html" class="header__menu__link">
+                                    Гірські прогулянки з гідом
+                                </a>
+                            </li>
+                            <li class="header__menu__item">
+                                <a href="./gastronomic.html" class="header__menu__link">
+                                    Гастрономічні враження
+                                </a>
+                            </li>
+                            <li class="header__menu__item">
+                                <a href="#" class="header__menu__link">
+                                    Екскурсії та культурні заходи
+                                </a>
+                            </li>
+                            <li class="header__menu__item">
+                                <a href="./about.html" class="header__menu__link">
+                                    Про нас
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav__list">
+                    <li class="header__nav__item">
+                        <a href="./spa.html" class="header__nav__link">
+                            Спа-релакс
+                        </a>
+                    </li>
+                    <li class="header__nav__item">
+                        <a href="./hiking.html" class="header__nav__link">
+                            Гірські прогулянки з гідом
+                        </a>
+                    </li>
+                    <li class="header__nav__item">
+                        <a href="./gastronomic.html" class="header__nav__link">
+                            Гастрономічні враження
+                        </a>
+                    </li>
+                    <li class="header__nav__item">
+                        <a href="#" class="header__nav__link">
+                            Екскурсії та культурні заходи
+                        </a>
+                    </li>
+                    <li class="header__nav__item"><a href="./about.html" class="header__nav__link">
+                            Про нас
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="content content--gastro">
+            <div class="banner banner--gastro">
+                <h2 class="banner__heading">
+                    Гастрономічні враження
+                </h2>
+            </div>
+            <div class="about about--gastro">
+                <h2 class="about__heading">
+                    Кулінарна подорож по
+                    <span class="header__title">
+                        Rout mountain
+                    </span>
+                </h2>
+                <img src="../img/gastronomic/about_gastro.jpg" alt="about_gastro" class="about__img" />
+                <p class="about__text">
+                    Кожен турист, відвідавши наші ресторани чи точки з вуличною їжею, знайде для себе щось смачне і
+                    цікаве. Пропонуємо як страви ситні та калорійні з різноманітних видів м'яса та риби, так і велику
+                    кількість страв малокалорійних, вегетаріанських та веганських.
+                </p>
+                <p class="about__text">
+                    Наші гості мають нагоду спробувати не тільки страви української кухні, а і страви з інших куточків
+                    світу.
+                </p>
+                <p class="about__text">
+                    Також в наших ресторанах Ви можете навчитися готувати свої улюблені страви на наших майстер класах.
+                </p>
+                <p class="about__text">
+                    Чекаємо на Вас! Смачної Вам подорожі!
+                </p>
+            </div>
+            <div class="hot-deals hot-deals--gastro" id="slider">
+                <div class="hot-deals__wrap">
+                    <h2 class="hot-deals__heading">
+                        Тиждень Польші в наших закладах
+                    </h2>
+                    <img src="../img/gastronomic/week_food/poland.png" alt="polish_flag" class="flag-img">
+                </div>
+                <button class="hot-deals__btn hot-deals__btn--next" id="nextButton">
+                    &#10095;
+                </button>
+                <button class="hot-deals__btn hot-deals__btn--prev" id="prevButton">
+                    &#10094;
+                </button>
+                <div class="hot-deals__holder">
+                    <div class="hot-deals__item slide">
+                        <img src="../img/gastronomic/week_food/zurek_edelweiss.jpg" alt="zurek_edelweiss"
+                            class="hot-deals__img" />
+                        <h3 class="hot-deals__title">
+                            Ресторан "Едельвейс" пропонує скуштувати суп Журек (Żurek)
+                        </h3>
+                        <p class="hot-deals__description">
+                            Насичений, ароматний носій вікових традицій Польщі. Журек - це самий польський суп з всіх
+                            супів. Навіть більше польський і народний ніж самі флячки (flaczki). Він подається зі щедрою
+                            порцією копченої ковбаси та вареним яйцем. А в нашому ресторані, звичайно ж, ми Вам подамо
+                            його ще й у смачному, запашному хлібчику.
+                        </p>
+                    </div>
+                    <div class="hot-deals__item slide">
+                        <img src="../img/gastronomic/week_food/zapiekanka_privit.jpg" alt="zapiekanka_privit"
+                            class="hot-deals__img" />
+                        <h3 class="hot-deals__name">
+                            Фуд-трак "Привіт! Смачного! Чекаємо знову!" готує смачну польску
+                            "Запіканку" (Zapiekanka)
+                        </h3>
+                        <p class="hot-deals__description">
+                            Це та страва - яку можна купити в невеликому кіоску або кафе чи барі на кожній центральній
+                            пішохідній вулиці в Польщі і не тільки. "Запіканка" - це відомий польський фаст-фуд, гаряча
+                            канапка, слава якої вже давно поширилась за межі Польщі. Польська відповідь хот-догам та
+                            гамбургерам.
+                        </p>
+                        <p class="hot-deals__description">
+                            Пропонуємо Вашій увазі як класичну версію запіканки, яка складається з кількох простих
+                            інгрідієнтів, хрусткого бакету, потрібнених і піджарених грибів, сиру та кетчупу. Так і
+                            варіантів, де за Вашим бажанням можемо додати кукурудзу, помідори, курку чи ковбаски.
+                        </p>
+                    </div>
+                    <div class="hot-deals__item slide">
+                        <img src="../img/gastronomic/week_food/szarlotka_druzi.png" alt="szarlotka_druzi"
+                            class="hot-deals__img" />
+                        <h3 class="hot-deals__name">
+                            Наша кав'ярня с чудовою назвою "Друзі" пропонує до кави, чаю чи
+                            гарячого
+                            шоколаду шматочок польської шарлотки (Szarlotka)
+                        </h3>
+                        <p class="hot-deals__description">
+                            Оригінальна шарлотка, родом із Франції. В Польщі своє розуміння шарлотки, вона випікається
+                            на пісочному тісті з великою кількістю яблук та кориці. В результаті шарлотка смачна, в міру
+                            солодка та хрустка!
+                        </p>
+                        <p class="hot-deals__description">
+                            Вам подадуть її теплою з кулькою холодного ванільного морозива. Це неймовірне задоволення!
+                        </p>
+                    </div>
+                    <div class="hot-deals__item slide">
+                        <img src="../img/gastronomic/week_food/oscypek_gastro_prezent.jpg" alt="oscypek_gastro_prezent"
+                            class="hot-deals__img" />
+                        <h3 class="hot-deals__name">
+                            Під час тижню польскої кухні в нашому магазині "Гастро-презент"
+                            можете придбати на подарунок собі, або своїм рідним та друзям сир "Осципек" (Oscypek)
+                        </h3>
+                        <p class="hot-deals__description">
+                            Осципек - овечий копчений сир, який походить з гірських регіонів Польщі, але зараз можна
+                            його знайти у кожному регіоні та місті Польщі.
+                        </p>
+                        <p class="hot-deals__description">
+                            У нас Ви можете його купити у версії для нарізання для канапок, або для грилювання чи
+                            смаження, у вигляді невеличких порційних сирків.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="paralax parallax--gastro">
+                <h2 class="banner__heading">
+                    Наші смачні локації
+                </h2>
+            </div>
+            <div class="service service--mod">
+                <img src="../img/gastronomic/locations/edelweiss_restaurant.jpg" alt="edelweiss_restaurant"
+                    class="service__img" />
+                <h3 class="heading">
+                    Ресторан
+                </h3>
+                <div class="heading__logo">
+                    <span class="font-mod">
+                        Edelweiss
+                    </span>
+                    <img src="../img/gastronomic/locations/edelweiss_restaurant_logo.png"
+                        alt="edelweiss_restaurant_logo" class="service-logo__img">
+                </div>
+                <p class="description">
+                    Наш ресторан з відкритою кухнею, бо вважаємо, що кращою ознакою гідної уваги закладу є його
+                    відкритість. У поданні страв, у ставлені до гостя і, звичайно ж, в самій кухні. Туди, де солодко
+                    пахне десертами, чується мелодія крапель вина в келиху і томиться на очах у гостя приготовлена
+                    страва, хочеться приходити ще і ще. Адже не дарма кажуть, що перша частина задоволення -
+                    споглядання. Також в нашому ресторані Ви матимете нагоду, не тільки споглядати за тим, як кухар
+                    готує для Вас, а й самому приготувати улюблену або нову страву на наших майстер-класах.
+                </p>
+                <a href="" class="service__btn">
+                    Детальніше...
+                </a>
+            </div>
+            <div class="service service--spec">
+                <img src="../img/gastronomic/locations/food_truck.webp" alt="food_truck" class="service__img" />
+                <h3 class="heading">
+                    Фуд-трак
+                </h3>
+                <div class="heading__logo">
+                    <img src="../img/gastronomic/locations/food_track_logo.png" alt="food_track_logo"
+                        class="service-logo__img">
+                    <span class="font-spec">
+                        Привіт! Смачного! Чекаємо знову!
+                    </span>
+                </div>
+                <p class="description">
+                    Популярність "ресторанів на колесах" давно набрала свої оберти у всьому світі, так і в Україні
+                    слідуючи за Європою активно розвивається. Ми не виключення.
+                </p>
+                <p class="description">
+                    Наш фуд-трак пропонує скуштувати як авторськи бургери, піци та модні азіатськи страви швидкого
+                    приготування, так і традиційні, українській кухні, вареники та деруни.
+                </p>
+                <p class="description">
+                    З задоволенням вивчаємо різні кухні світу, та пропонуємо своїм туристам спробувати нову, цікаву,
+                    смачну їжу!
+                </p>
+                <a href="" class="service__btn">
+                    Детальніше...
+                </a>
+            </div>
+            <div class="service service--addit">
+                <img src="../img/gastronomic/locations/friends_cafe.jpg" alt="friends_cafe" class="service__img" />
+                <h3 class="heading heading--mod">
+                    Кав'ярня
+                </h3>
+                <img src="../img/gastronomic/locations/friends_logo.png" alt="friends_logo">
+                <p class="description">
+                    Справжніх кавоманів, які готові об'їхати весь світ у пошуках ідеального кавового смаку, запрошуємо
+                    до нашої кав'ярні. Тут Ви не тільки вип'єте улюблений напій з канапкою, чи шматочком тістечка, а
+                    й побуваєте в чудовій атмосфері серіалу "Друзі".
+                </p>
+                <p class="description">
+                    Це затише гніздечко завжи радіє візитам наших любих гостей. Приємна атмосфера... І смакота куди не
+                    поглянь... Ідеальне місце для зустрічей справжніх друзів!
+                </p>
+                <p class="description">
+                    Отож, дивимось серіал "Друзі", п'ємо каву та насолоджуємося життям!
+                </p>
+                <a href="" class="service__btn">
+                    Детальніше...
+                </a>
+            </div>
+            <div class="service service--distin">
+                <img src="../img/gastronomic/locations/gastro_boutique.jpg" alt="gastro_boutique"
+                    class="service__img" />
+                <h3 class="heading">
+                    Магазин
+                </h3>
+                <span class="font-distin">
+                    gastro present
+                </span>
+                <p class="description">
+                    Гірськолижний курорт "Rout Mountain" - це не лише гарне місце для активного відпочинку, а й райський
+                    куточок для душі. Адже в магазині курорту смаколики, які можна придбати, як для себе на згадку про
+                    нас, так і на подарунок для рідних чи друзів, мають високу якість, а також усі вони натуральні та
+                    приносять здоров'ю людини лише користь.
+                </p>
+                <p class="description">
+                    Туристи які в перше їдуть на наш курорт, запитують, що купити в "Rout Mountain"? Сири різних видів,
+                    карпатський чай із запашних трав, що ростуть у гірських долинах, варення, мед, сушені фрукти,
+                    домашнє вино, пряники, смачні цукерки з горіхами та ягодами, та шоколад.
+                </p>
+                <a href="" class="service__btn">
+                    Детальніше...
+                </a>
+            </div>
+            <div class="paralax parallax--gastro">
+                <h2 class="banner__heading">
+                    Відгуки наших відвідувачів
+                </h2>
+            </div>
+            <div class="response">
+                <div class="response__box active" id="response-1">
+                    <img src="../img/ava.png" alt="ava" class="response__img" />
+                    <div class="response__description">
+                        <h3 class="response__autor">
+                            Соломія Сидоренко
+                        </h3>
+                        <p class="response__text">
+                            Ресторан "Едельвейс" - це чудове атмосферне місце:) Привітний персонал і надзвичайно смачні
+                            страви :)
+                        </p>
+                    </div>
+                </div>
+                <div class="response__box" id="response-2">
+                    <img src="../img/ava.png" alt="ava" class="response__img" />
+                    <div class="response__description">
+                        <h3 class="response__autor">
+                            Андрій Оленко
+                        </h3>
+                        <p class="response__text">
+                            Недавно завітав у кав'ярню "Friends". Класна атмосферна, чудова та запашна кава, з гарним і
+                            на вид і на смак тістечком! Рекомендую!
+                        </p>
+                    </div>
+                </div>
+                <div class="response__box" id="response-3">
+                    <img src="../img/ava.png" alt="ava" class="response__img" />
+                    <div class="response__description">
+                        <h3 class="response__autor">
+                            Jadwiga Jankowska
+                        </h3>
+                        <p class="response__text">
+                            Pierwszy raz na Ukrainie! Dobre wrażenia z kraju, kurortu! Wszystkie dania prezentowane
+                            podczas „Tygodnia Polski” są pyszne i przypominają te, które jadłam w domu w Polsce!
+                        </p>
+                    </div>
+                </div>
+                <ul class="response-tabs">
+                    <li class="response-tabs__item">
+                        <a href="#response-1" class="response-tabs__link active">
+                        </a>
+                    </li>
+                    <li class="response-tabs__item">
+                        <a href="#response-2" class="response-tabs__link">
+                        </a>
+                    </li>
+                    <li class="response-tabs__item">
+                        <a href="#response-3" class="response-tabs__link">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="paralax parallax--gastro">
+                <h2 class="banner__heading">
+                    Фотогалерея
+                </h2>
+            </div>
+            <div class="photos photos--mod photos--first">
+                <img src="../img/gastronomic/gastro_lightbox/edelweiss_bar.jpg" alt="edelweiss_bar"
+                    class="photos__img photos__img--mod" />
+            </div>
+            <div class="photos photos--mod photos--second">
+                <img src="../img/gastronomic/gastro_lightbox/edelweiss_in.jpg" alt="edelweiss_hall"
+                    class="photos__img photos__img--mod" />
+            </div>
+            <div class="photos photos--mod photos--third">
+                <img src="../img/gastronomic/gastro_lightbox/edelweiss_open_kitchen.jpg" alt="edelweiss_open_kitchen"
+                    class="photos__img photos__img--mod" />
+            </div>
+            <div class="photos photos--mod photos--fourth">
+                <img src="../img/gastronomic/gastro_lightbox/edelweiss_room.jpg" alt="edelweiss_room"
+                    class="photos__img photos__img--mod" />
+            </div>
+            <div class="photos photos--mod photos--fifth">
+                <img src="../img/gastronomic/gastro_lightbox/family_lunch.jpg" alt="family_lunch"
+                    class="photos__img photos__img--mod" />
+            </div>
+            <div class="photos photos--mod photos--sixth">
+                <img src="../img/gastronomic/gastro_lightbox/magic_cook_one.jpg" alt="magic_cook_one"
+                    class="photos__img photos__img--mod" />
+            </div>
+            <div class="photos photos--mod photos--seventh">
+                <img src="../img/gastronomic/gastro_lightbox/magic_cook_two.jpg" alt="magic_cook_two"
+                    class="photos__img photos__img--mod" />
+            </div>
+            <div class="photos photos--mod photos--eighth">
+                <img src="../img/gastronomic/gastro_lightbox/magic_cook_three.jpg" alt="magic_cook_three"
+                    class="photos__img photos__img--mod" />
+            </div>
+            <div id="lightboxModal" class="lightboxModal">
+                <button class="lightboxModal__close">
+                    &times;
+                </button>
+                <button class="lightboxModal__arrow lightboxModal__arrow_prev">
+                    &#8249;
+                </button>
+                <button class="lightboxModal__arrow lightboxModal__arrow_next">
+                    &#8250;
+                </button>
+                <div class="lightboxModal__content">
+                    <div class="lightboxModal__slide">
+                        <img src="../img/gastronomic/gastro_lightbox/edelweiss_bar.jpg" alt="edelweiss_bar"
+                            class="photos__img" />
+                    </div>
+                    <div class="lightboxModal__slide">
+                        <img src="../img/gastronomic/gastro_lightbox/edelweiss_in.jpg" alt="edelweiss_hall"
+                            class="photos__img" />
+                    </div>
+                    <div class="lightboxModal__slide">
+                        <img src="../img/gastronomic/gastro_lightbox/edelweiss_open_kitchen.jpg"
+                            alt="edelweiss_open_kitchen" class="photos__img" />
+                    </div>
+                    <div class="lightboxModal__slide">
+                        <img src="../img/gastronomic/gastro_lightbox/edelweiss_room.jpg" alt="edelweiss_room"
+                            class="photos__img" />
+                    </div>
+                    <div class="lightboxModal__slide">
+                        <img src="../img/gastronomic/gastro_lightbox/family_lunch.jpg" alt="family_lunch"
+                            class="photos__img" />
+                    </div>
+                    <div class="lightboxModal__slide">
+                        <img src="../img/gastronomic/gastro_lightbox/magic_cook_one.jpg" alt="magic_cook_one"
+                            class="photos__img" />
+                    </div>
+                    <div class="lightboxModal__slide">
+                        <img src="../img/gastronomic/gastro_lightbox/magic_cook_two.jpg" alt="magic_cook_two"
+                            class="photos__img" />
+                    </div>
+                    <div class="lightboxModal__slide">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__top-box">
+                <ul class="footer__box">
+                    <li class="footer__item">
+                        <span class="footer__heading">
+                            Послуги
+                        </span>
+                    </li>
+                    <li class="footer__item">
+                        <a href="./spa.html" class="footer__link">
+                            Спа-релакс
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="./hiking.html" class="footer__link">
+                            Гірські прогулянки з гідом
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="./gastronomic.html" class="footer__link">
+                            Гастрономічні враження
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Екскурсії та культурні заходи
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Гарячі пропозиції
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer__box">
+                    <li class="footer__item">
+                        <span class="footer__heading">
+                            Тарифи
+                        </span>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Вибір номерів та тарифів
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Знижки
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="./gastronomic.html" class="footer__link">
+                            Меню ресторанів та страви
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="./gastronomic.html" class="footer__link">
+                            Бронювання столів у ресторанах
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="./gastronomic.html" class="footer__link">
+                            Розклад майстер-класів та реєстрація
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer__box">
+                    <li class="footer__item">
+                        <span class="footer__heading">
+                            Контакти
+                        </span>
+                    </li>
+                    <li class="footer__item">
+                        <a href="./about.html" class="footer__link">
+                            Контакти та адреса
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Відгуки задоволених клієнтів
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Правила та політика конфіденційності
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Питання та відповіді
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer__box">
+                    <li class="footer__item">
+                        <span class="footer__heading">
+                            Стежте за нами
+                        </span>
+                    </li>
+                    <li class="footer__item">
+                        <a href="./about.html" class="footer__link">
+                            Про нас
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://www.facebook.com/" class="footer__link" target="_blank">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://www.instagram.com/" class="footer__link" target="_blank">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://twitter.com/" class="footer__link" target="_blank">
+                            Twitter
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__bottom-box">
+                <p class="footer__copyright">
+                    Copyright
+                    <span class="footer__name">
+                        Rout Mountain
+                    </span>
+                    2023
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/main.js"></script>
+    <script src="https://kit.fontawesome.com/950c43a68f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

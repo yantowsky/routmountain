@@ -1,0 +1,41 @@
+.banner--hiking, 
+.hiking-parallax {
+    background: url("../img/hiking/parallax_2.png") repeat;
+    background-color: lighten($additionalTextColor, 40%);
+    background-attachment: fixed;
+    text-align: center;
+    background-size: contain;
+    .heading--hiking {
+        display: inline-block;
+        font-size: 2.2rem;
+        background-color: rgba($additionalColor, $alpha: .9);
+        box-shadow: 5px 5px 5px darken($additionalColor, 90%);
+        border: 2px solid $mainTextColor;
+        padding: 20px 5%;
+        border-radius: 20px;
+        text-shadow: 3px 3px 3px $standartColor;
+
+        @media screen and (max-width: $breakpoint-md) {
+            font-size: 2rem;
+            text-shadow: 2px 2px 2px $standartColor;
+        }
+
+        @media screen and (max-width: $breakpoint-xs) {
+            font-size: 1.3rem;
+            text-shadow: 1px 1px 1px $standartColor;
+        }
+    }
+}
+
+.fa-solid {
+    width: 10px;
+    margin-right: 15px;
+}
+
+.about__heading--hiking,
+.team__heading--hiking,
+.tab__heading--hiking {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}

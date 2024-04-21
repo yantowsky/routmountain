@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Friends by Angry';
+    src: url('../fonts/Friends_by_Angry.eot');
+    src: url('../fonts/Friends_by_Angry.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Friends_by_Angry.woff2') format('woff2'),
+        url('../fonts/Friends_by_Angry.woff') format('woff'),
+        url('../fonts/Friends_by_Angry.ttf') format('truetype'),
+        url('../fonts/Friends_by_Angry.svg#Friends_by_Angry') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Jost:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&family=Neucha&family=Syncopate:wght@700&display=swap');
+
+body {
+    font-family: 'Bad Script', cursive;
+    font-family: 'Jost', sans-serif;
+}

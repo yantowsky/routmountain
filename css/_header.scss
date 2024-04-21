@@ -1,0 +1,213 @@
+.header {
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	&__top-box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: $additionalColor;
+		padding: 10px 25px;
+		@media screen and (max-width: $breakpoint-lg) {
+			padding: 5px 25px;
+		}
+		@media screen and (max-width: $breakpoint-md) {
+			padding: 3px 20px;
+		}
+		@media screen and (max-width: $breakpoint-sm) {
+			padding: 3px 15px;
+		}
+		@media screen and (max-width: $breakpoint-xs) {
+			padding: 3px 7px;
+		}
+	}
+	&__link {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		@media screen and (max-width: $breakpoint-xs) {
+			gap: 7px;
+		}
+	}
+	&__img {
+		@media screen and (max-width: $breakpoint-xs) {
+			max-width: 60px;
+		}
+	}
+	&__title {
+		font-size: 1.5rem;
+		letter-spacing: 5px;
+		color: $additionalTextColor;
+		text-transform: uppercase;
+		transition: all 0.5s ease;
+		font-weight: 700;
+		@media screen and (max-width: $breakpoint-lg) {
+			letter-spacing: 3px;
+			font-size: 1.4rem;
+		}
+		@media screen and (max-width: $breakpoint-md) {
+			letter-spacing: 2px;
+			font-size: 1.3rem;
+		}
+		@media screen and (max-width: $breakpoint-sm) {
+			font-size: 1.2rem;
+		}
+		@media screen and (max-width: $breakpoint-xs) {
+			font-size: 1.1rem;
+		}
+		@media screen and (max-width: $breakpoint-xxs) {
+			font-size: 1rem;
+		}
+		&:hover {
+			color: lighten($additionalTextColor, 30%);
+		}
+	}
+	&__phone {
+		color: $additionalTextColor;
+		font-size: 1.2rem;
+		transition: all 0.5s ease;
+		@media screen and (max-width: $breakpoint-xs) {
+			display: none;
+		}
+		&:hover {
+			color: lighten($additionalTextColor, 30%);
+		}
+	}
+	&__contacts {
+		display: flex;
+		gap: 30px;
+		align-items: center;
+		@media screen and (max-width: $breakpoint-xs) {
+			gap: 0;
+		}
+	}
+	&__social {
+		display: grid;
+		grid-template-columns: repeat(3, auto);
+		gap: 8px;
+		&__item {
+			font-size: 1.5rem;
+			@media screen and (max-width: $breakpoint-lg) {
+				font-size: 1.4rem;
+			}
+			@media screen and (max-width: $breakpoint-md) {
+				font-size: 1.3rem;
+			}
+			@media screen and (max-width: $breakpoint-sm) {
+				font-size: 1.2rem;
+			}
+			@media screen and (max-width: $breakpoint-xs) {
+				display: none;
+			}
+		}
+		&__link {
+			color: $additionalTextColor;
+			transition: all 0.5s ease;
+			&:hover {
+				color: lighten($additionalTextColor, 30%);
+			}
+		}
+	}
+	&__toogle {
+		display: none;
+		@media screen and (max-width: $breakpoint-xs) {
+			display: block;
+		}
+	}
+	&__menu {
+		display: none;
+		@media screen and (max-width: $breakpoint-xs) {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 0;
+			background-color: $additionalTextColor;
+		}
+		&__list {
+			display: flex;
+			flex-direction: column;
+			box-shadow: 0px 0px 25px 0px rgba($additionalTextColor, 0.75);
+		}
+		&__item {
+			border-bottom: 2px solid lighten($additionalTextColor, 40%);
+			text-align: center;
+		}
+		&__link {
+			display: block;
+			color: $contrastTextColor;
+			padding: 7px 5px;
+			&:hover {
+				background-color: lighten($additionalTextColor, 15%);
+			}
+		}
+		&-check {
+			display: none;
+			&:checked ~ .header__menu {
+				display: block;
+			}
+		}
+		&-label {
+			display: flex;
+			flex-direction: column;
+			gap: 6px;
+			& span {
+				width: 23px;
+				height: 2px;
+				background-color: $additionalTextColor;
+				border-radius: 2px;
+			}
+		}
+	}
+	&__nav {
+		background-color: $mainColor;
+		padding: 10px 0;
+		@media screen and (max-width: $breakpoint-xs) {
+			display: none;
+		}
+		&__list {
+			display: flex;
+			justify-content: center;
+		}
+		&__item {
+			border-right: 2px solid $additionalColor;
+			padding: {
+				left: 20px;
+				right: 20px;
+			}
+			@media screen and (max-width: $breakpoint-md) {
+				padding: {
+					left: 15px;
+					right: 15px;
+				}
+			}
+			@media screen and (max-width: $breakpoint-sm) {
+				padding: {
+					left: 7px;
+					right: 7px;
+				}
+			}
+			text-align: center;
+			&:last-child {
+				border-right: none;
+			}
+		}
+		&__link {
+			color: $additionalTextColor;
+			font-size: 1.4rem;
+			transition: all 0.5s ease;
+			@media screen and (max-width: $breakpoint-lg) {
+				font-size: 1.2rem;
+			}
+			@media screen and (max-width: $breakpoint-md) {
+				font-size: 1.1rem;
+			}
+			@media screen and (max-width: $breakpoint-sm) {
+				font-size: 1rem;
+			}
+			&:hover {
+				color: lighten($additionalTextColor, 30%);
+				text-decoration: underline;
+			}
+		}
+	}
+}

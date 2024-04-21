@@ -1,0 +1,393 @@
+.banner--gastro,
+.parallax--gastro {
+    text-align: center;
+    background: url("../img/gastronomic/parallax_food.png") repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: lighten($additionalTextColor, 40%);
+    border-top: 2px solid $additionalTextColor;
+    border-bottom: 2px solid $additionalTextColor;
+
+    .banner__heading {
+        display: inline-block;
+        font-size: 2.2rem;
+        padding: 20px 5%;
+        background-color: rgba($additionalColor, $alpha: .9);
+        border: 2px solid $additionalTextColor;
+        border-radius: 20px;
+        box-shadow: 5px 10px 7px $mainShadowColor;
+        text-shadow: 5px 5px 7px $mainShadowColor;
+
+        @media screen and (max-width: $breakpoint-md) {
+            font-size: 2rem;
+        }
+
+        @media screen and (max-width: $breakpoint-xs) {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.content--gastro {
+    background: url("../img/gastronomic/background_content.png") repeat;
+    background-size: contain;
+
+    .about--gastro {
+        box-shadow: 5px 10px 7px $mainShadowColor;
+        padding: 30px 50px;
+        transition: 0.4s ease-in;
+
+        .about__heading {
+            margin: 0 auto;
+            width: 70%;
+        }
+    }
+
+    .hot-deals--gastro {
+        box-shadow: 5px 10px 7px $mainShadowColor;
+        padding: 30px 50px;
+        transition: 0.4s ease-in;
+
+        .hot-deals__item {
+            justify-content: flex-start;
+            gap: 10px;
+        }
+
+        .hot-deals__wrap {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .flag-img {
+                width: 12%;
+            }
+        }
+
+        .hot-deals__btn {
+            font-size: 3.5rem;
+            padding: 0;
+            text-shadow: 5px 10px 7px $mainShadowColor;
+        }
+
+        .hot-deals__btn--next {
+            right: 10px;
+        }
+
+        .hot-deals__btn--prev {
+            left: 10px;
+        }
+
+        .hot-deals__btn:hover {
+            transform: scale(1.3) translateY(-40%);
+            color: $hoverBtnColor;
+            background-color: $additionalColor;
+
+            @media screen and (max-width: $breakpoint-sm) {
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    .about--gastro:hover,
+    .hot-deals--gastro:hover {
+        transform: scale(1.1);
+
+        @media screen and (max-width: $breakpoint-sm) {
+            transform: none;
+        }
+    }
+
+    .service {
+        justify-content: space-between;
+        padding: 25px 8%;
+        box-shadow: 5px 10px 7px $mainShadowColor;
+        transition: 0.4s ease-in;
+
+        .service__btn {
+            transition: 0.4s ease-in;
+        }
+
+        .service__btn:hover {
+            background-color: $hoverBtnColor;
+        }
+
+        .heading--mod {
+            font-family: 'Friends by Angry';
+            font-size: 1.5rem;
+            letter-spacing: 0.5rem;
+        }
+
+        .heading__logo {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .font-mod {
+                font-family: 'Kaushan Script', cursive;
+                font-size: 3rem;
+                color: $standartColor;
+            }
+
+            .font-spec {
+                font-family: 'Lobster', sans-serif;
+                font-size: 1.5rem;
+                color: $standartColor;
+            }
+
+            .service-logo__img {
+                width: 35%;
+            }
+        }
+
+        .font-distin {
+            font-family: 'Syncopate', sans-serif;
+            font-size: 2rem;
+            color: $standartColor;
+        }
+    }
+
+    .service:hover {
+        transform: scale(1.1);
+
+        @media screen and (max-width: $breakpoint-sm) {
+            transform: none;
+        }
+    }
+
+    .service--mod {
+        grid-column: 2/9;
+
+        @media screen and (max-width: $breakpoint-md) {
+            grid-column: 2/16;
+        }
+
+        @media screen and (max-width: $breakpoint-xs) {
+            grid-column: 2/30;
+            margin-inline: 0;
+        }
+    }
+
+    .service--spec {
+        grid-column: 9/16;
+
+        @media screen and (max-width: $breakpoint-md) {
+            grid-column: 16/30;
+        }
+
+        @media screen and (max-width: $breakpoint-xs) {
+            grid-column: 2/30;
+            margin-inline: 0;
+        }
+    }
+
+    .service--addit {
+        grid-column: 16/23;
+
+        @media screen and (max-width: $breakpoint-md) {
+            grid-column: 2/16;
+        }
+
+        @media screen and (max-width: $breakpoint-xs) {
+            grid-column: 2/30;
+            margin-inline: 0;
+        }
+    }
+
+    .service--distin {
+        grid-column: 23/30;
+
+        @media screen and (max-width: $breakpoint-md) {
+            grid-column: 16/30;
+        }
+
+        @media screen and (max-width: $breakpoint-xs) {
+            grid-column: 2/30;
+            margin-inline: 0;
+        }
+    }
+
+    .service__img {
+        border-radius: 6px;
+    }
+
+    .response {
+        margin: 0 auto;
+        width: 88%;
+        box-shadow: 5px 10px 7px $mainShadowColor;
+        transition: 0.4s ease-in;
+        gap: 0;
+
+        .active {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            @media screen and (max-width: $breakpoint-xs) {
+                flex-direction: column;
+            }
+        }
+
+        .response__description {
+            padding-top: 0;
+            gap: 20px;
+
+            .response__autor {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    .response:hover {
+        transform: scale(1.15);
+
+        @media screen and (max-width: $breakpoint-sm) {
+            transform: none;
+        }
+    }
+
+    .response-tabs__link {
+        box-shadow: 5px 10px 7px $mainShadowColor;
+    }
+
+    .response-tabs__link:hover {
+        background-color: $hoverBtnColor;
+        transform: scale(1.3);
+
+        @media screen and (max-width: $breakpoint-sm) {
+            transform: none;
+        }
+    }
+
+    .response-tabs__link.active {
+        background-color: $tabLinkColor;
+        border: 2px solid $additionalTextColor;
+    }
+
+    .about__text,
+    .hot-deals__description,
+    .description,
+    .response__text {
+        font-size: 1.1rem;
+    }
+
+    .heading {
+        font-size: 1.4rem;
+    }
+}
+
+.photos {
+    transition: 0.4s ease-in;
+}
+
+.photos--first {
+    grid-column: 2/9;
+
+    @media screen and (max-width: $breakpoint-xs) {
+        grid-column: 2/16;
+    }
+
+    @media screen and (max-width: $breakpoint-xxs) {
+        padding-inline: 5px;
+    }
+}
+
+.photos--second {
+    grid-column: 9/16;
+
+    @media screen and (max-width: $breakpoint-xs) {
+        grid-column: 16/30;
+    }
+
+    @media screen and (max-width: $breakpoint-xxs) {
+        padding-inline: 5px;
+    }
+}
+
+.photos--third {
+    grid-column: 16/23;
+
+    @media screen and (max-width: $breakpoint-xs) {
+        grid-column: 2/16;
+    }
+
+    @media screen and (max-width: $breakpoint-xxs) {
+        padding-inline: 5px;
+    }
+}
+
+.photos--fourth {
+    grid-column: 23/30;
+
+    @media screen and (max-width: $breakpoint-xs) {
+        grid-column: 16/30;
+    }
+
+    @media screen and (max-width: $breakpoint-xxs) {
+        padding-inline: 5px;
+    }
+}
+
+.photos--fifth {
+    grid-column: 2/9;
+
+    @media screen and (max-width: $breakpoint-xs) {
+        grid-column: 2/16;
+    }
+
+    @media screen and (max-width: $breakpoint-xxs) {
+        padding-inline: 5px;
+    }
+}
+
+.photos--sixth {
+    grid-column: 9/16;
+
+    @media screen and (max-width: $breakpoint-xs) {
+        grid-column: 16/30;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        padding-inline: 5px;
+    }
+}
+
+.photos--seventh {
+    grid-column: 16/23;
+
+    @media screen and (max-width: $breakpoint-xs) {
+        grid-column: 2/16;
+    }
+
+    @media screen and (max-width: $breakpoint-xxs) {
+        padding-inline: 5px;
+    }
+}
+
+.photos--eighth {
+    grid-column: 23/30;
+
+    @media screen and (max-width: $breakpoint-xs) {
+        grid-column: 16/30;
+    }
+
+    @media screen and (max-width: $breakpoint-xxs) {
+        padding-inline: 5px;
+    }
+}
+
+.photos--mod:hover {
+    transform: scale(1.2);
+
+    @media screen and (max-width: $breakpoint-sm) {
+        transform: none;
+    }
+}
+
+.photos__img--mod {
+    background-color: $additionalColor;
+    padding: 10px 3%;
+    border-radius: 6px;
+    box-shadow: 5px 10px 7px #1F5F5A;
+}

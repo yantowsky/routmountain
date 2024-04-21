@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+html {
+	font-style: 16px;
+}
+body {
+	font-size: 1rem;
+	background-color: $mainColor;
+}
+img {
+	border-style: 0;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}

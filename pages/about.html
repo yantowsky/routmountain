@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__top-box">
+                <div class="header__logo">
+                    <a href="../index.html" class="header__link">
+                        <img src="../img/logo.png" alt="Site Logo" class="header__img">
+                        <span class="header__title">Rout mountain</span>
+                    </a>
+                </div>
+                <div class="header__contacts">
+                    <a href="tel:380962222222" class="phone header__phone"> +38 (096) 222-22-22</a>
+                    <ul class="header__social">
+                        <li class="header__social__item">
+                            <a href="https://facebook.com/" class="header__social__link" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li class="header__social__item">
+                            <a href="https://instagram.com/" class="header__social__link" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li class="header__social__item">
+                            <a href="https://twitter.com/" class="header__social__link" target="_blank"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__toogle">
+                    <input type="checkbox" name="menu" id="header__menu" class="header__menu-check" />
+                    <label for="header__menu" class="header__menu-label">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <nav class="header__menu">
+                        <ul class="header__menu__list">
+                            <li class="header__menu__item">
+                                <a href="./spa.html" class="header__menu__link">Спа-релакс</a>
+                            </li>
+                            <li class="header__menu__item">
+                                <a href="./hiking.html" class="header__menu__link">Гірські прогулянки з гідом</a>
+                            </li>
+                            <li class="header__menu__item">
+                                <a href="./gastronomic.html" class="header__menu__link">Гастрономічні враження</a>
+                            </li>
+                            <li class="header__menu__item">
+                                <a href="#" class="header__menu__link">Екскурсії та культурні заходи</a>
+                            </li>
+                            <li class="header__menu__item">
+                                <a href="../pages/about.html" class="header__menu__link">Про нас</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav__list">
+                    <li class="header__nav__item">
+                        <a href="./spa.html" class="header__nav__link">Спа-релакс</a>
+                    </li>
+                    <li class="header__nav__item">
+                        <a href="./hiking.html" class="header__nav__link">Гірські прогулянки з гідом</a>
+                    </li>
+                    <li class="header__nav__item">
+                        <a href="./gastronomic.html" class="header__nav__link">Гастрономічні враження</a>
+                    </li>
+                    <li class="header__nav__item">
+                        <a href="#" class="header__nav__link">Екскурсії та культурні заходи</a>
+                    </li>
+                    <li class="header__nav__item">
+                        <a href="./about.html" class="header__nav__link">Про нас</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="about-content">
+            <div class="banner banner--about">
+                <h2 class="banner__heading">Про нас</h2>
+            </div>
+            <div class="desc">
+                <h2 class="desc__heading">Чому сами ми?</h2>
+                <img src="../img/about-us.webp" alt="about" class="about__img" />
+                <p class="desc__text">
+                    Ми робимо все для того, щоб Вам подобалось у нас, та щоб Ви неодмінно захотіли повернутися ще раз!
+                    Саме тому ми поєднали комфорт, якісний сервіс та приємні ціни. Хтось скаже: "Так це ж неможливо!"
+                    Так, дійсно, для когось це неможливо, але не для нас, бо наша команда обожнює свою справу!
+                    Щоб переконатися в цьому, ми запрошуємо Вас спробувати наші найкращі тури, прогулятися у супроводі
+                    гіда по мальовничим горам, спробувати наші унікальні фірмові страви, а також сходити у наш сучасний
+                    спа-центр.
+                </p>
+            </div>
+            <div class="info--about" id="slider">
+                <h2 class="info--about__heading">Трохи статистики</h2>
+                <button class="info--about__btn info--about__btn--next" id="nextButton">&#10095;</button>
+                <button class="info--about__btn info--about__btn--prev" id="prevButton">&#10094;</button>
+                <div class="info--about__holder">
+                    <div class="info--about__item slide">
+                        <img src="../img/about/people_ua.png" alt="Number of people" class="info--about__img" />
+                        <p class="info--about__description">
+                            За цей час наша команда, яка вже стала великою дружньою сім'єю, організувала незабутній
+                            відпочинок тисячам людей з
+                            різних куточків України та світу. Разом з нами цей дивовижний курорт відвідали понад 50000
+                            мандрівників.
+                        </p>
+                    </div>
+                    <div class="info--about__item slide">
+                        <img src="../img/about/years-UA.png" alt="Number of years" class="info--about__img" />
+                        <!-- <h3 class="info--about__title">Незабутні подорожі та пригоди</h3> -->
+                        <p class="info--about__description">
+                            Ми туроператор <b>"ROUT MOUNTAIN"</b>, який працює у туристичній сфері України вже понад 15
+                            років!
+                        </p>
+                    </div>
+                    <div class="info--about__item slide">
+                        <img src="../img/about/tours_UA.png" alt="Number of tours" class="info--about__img" />
+                        <!-- <h3 class="info--about__title">Незабутні подорожі та пригоди</h3> -->
+                        <p class="info--about__description">
+                            Ми пишаємося тим, що кількість організованих нами турів та екскурсій сягнула більше 2000.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="paralax parallax--about">
+
+                <h2 class="banner__heading">Наша команда</h2>
+            </div>
+            <div class="service teams team-1">
+                <div class="team__info">
+                    <h3 class="heading">Аліна Маріухіна</h3>
+                    <img src="../img/about/Alina.jpg" alt="Alina" class="service__img">
+                    <h4 class="desc__heading">Менеджер з туризму</h4>
+                    <p class="description">
+                        Роки сумлінної праці та високий рівень професіоналізму – це про нашу Аліну. Побувала у багатьох
+                        країнах світу, навіть
+                        деякий час проживала у Греції, тому свої знання черпає не з відео у ютуб, а власними відкриттями
+                        та
+                        емоціями. Також Аліна є інструктором з безпеки у походах. Вона
+                        робить все можливе, щоб ваша відпустка була неймовірною.
+                    </p>
+                </div>
+                <a href="#" class="service__btn">Детальніше...</a>
+            </div>
+            <div class="service teams team-2">
+                <div class="team__info">
+
+                    <h3 class="heading">Артем Зарудний</h3>
+                    <img src="../img/about/Artem.jpg" alt="Artem" class="service__img">
+                    <h4 class="desc__heading">Гід-екскурсовод</h4>
+                    <p class="description">
+                        Пристрасний гірський пішохід та відданий експерт з дванадцітирічним досвідом у проведенні
+                        екскурсій
+                        у найвищих гірських
+                        вершинах. Його великий багаж знань про альпінізм та здатність передавати цю любов до гір своїм
+                        гостям робить кожну
+                        подорож особливою. Артем завжди відкритий для нових вражень та спілкування з природою, що
+                        дозволяє
+                        йому створювати
+                        неповторні моменти для своїх подорожуючих.
+                    </p>
+                </div>
+                <a href="#" class="service__btn">Детальніше...</a>
+            </div>
+            <div class="service teams team-3">
+                <div class="team__info">
+                    <h3 class="heading">Олег Гусак</h3>
+                    <img src="../img/about/Oleg.jpg" alt="Oleg" class="service__img">
+                    <h4 class="desc__heading">Генеральний директор</h4>
+                    <p class="description">
+                        «Золотий фонд» нашого <b>ROUT MOUNTAIN.</b> Генератор ідей, які успішно втілюються та стимулюють
+                        подальший ріст нашої компанії.
+                        Інтуїтивно відчуває тренди в туризмі задовго до їх початку. Чудовий управлінець, завдяки йому
+                        вся
+                        наша команда працює, як
+                        швейцарський годинник.
+                    </p>
+                </div>
+                <a href="#" class="service__btn">Детальніше...</a>
+            </div>
+            <div class="service teams team-4">
+                <div class="team__info">
+                    <h3 class="heading">Ірина Корнієнко</h3>
+                    <img src="../img/about/Ira.jpg" alt="Irina" class="service__img">
+                    <h4 class="desc__heading">Менеджер зі SPA</h4>
+                    <p class="description">
+                        Професійна Міжнародна діяльність з управління SPA-салонами. Об'єктивність, надійність,
+                        достовірність, професійність, а також стовідсоткова гарантія
+                        того, що ваш СПА-релакс буде незабутнім і неодмінно позитивним - усе це про Ірину.
+                        Ірина має досвід роботи з 2016 року. Навчалась у Київській академії масажистів, у медичному
+                        центрі
+                        естетичної косметології.
+                    </p>
+                </div>
+                <a href="#" class="service__btn">Детальніше...</a>
+            </div>
+            <div class="service teams team-5">
+                <div class="team__info">
+                    <h3 class="heading">Євген Янтовський</h3>
+                    <img src="../img/about/Eugene.jpg" alt="Eugene" class="service__img">
+                    <h4 class="desc__heading">Директор ресторану</h4>
+                    <p class="description">
+                        Євген полюбляє готувати страви різних народів світу, має великий досвід роботи шеф-кухарем
+                        міжнародного рівня. Він завжди в курсі всіх кулінарних новинок й
+                        актуальних трендів. Якщо не знаєте, які нові страви спробувати, то Євген тут справжній
+                        спеціаліст,
+                        його ресторан <b>"Edelweiss"</b> здатен задовільнити найвибагливішого гурмана.
+                    </p>
+                </div>
+                <a href="#" class="service__btn">Детальніше...</a>
+            </div>
+            <div class="service teams team-6">
+                <div class="team__info">
+                    <h3 class="heading">Федір Вященко</h3>
+                    <img src="../img/about/Fedir.jpg" alt="Fedir" class="service__img">
+                    <h4 class="desc__heading">Гід-перекладач</h4>
+                    <p class="description">
+                        Маючи за плечима багаторічний досвід подорожей та походів по гірським масивам Европи, Федір
+                        спеціалізується на проведенні екскурсій різними мовами.
+                        Чудова комунікабельність дозволяє йому знайти порозуміння абсолютно з усіма туристами. Також
+                        Федір
+                        проводить заняття з основ безпеки у походах.
+                    </p>
+                </div>
+                <a href="#" class="service__btn">Детальніше...</a>
+            </div>
+
+            <div class="paralax parallax--about">
+                <h2 class="banner__heading">Зворотній зв'язок</h2>
+            </div>
+
+            <!-- FORM -->
+
+            <div class="container">
+                <h3 class="text">
+                    Напишіть нам!
+                </h3>
+                <form action="#">
+                    <div class="form-row">
+                        <div class="input-data">
+                            <input type="text" required>
+                            <div class="underline"></div>
+                            <label for="">First Name</label>
+                        </div>
+                        <div class="input-data">
+                            <input type="text" required>
+                            <div class="underline"></div>
+                            <label for="">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-data">
+                            <input type="text" required>
+                            <div class="underline"></div>
+                            <label for="">Email Address</label>
+                        </div>
+                        <div class="input-data">
+                            <input type="text" required>
+                            <div class="underline"></div>
+                            <label for="">Website Name</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-data textarea">
+                            <textarea required></textarea>
+                            <br />
+                            <div class="underline"></div>
+                            <label for="">Write your message</label>
+
+                            <div class="form-row submit-btn" id="btn--mod">
+                                <div class="input-data">
+                                    <div class="inner"></div>
+                                    <input type="submit" value="submit">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__top-box">
+                <ul class="footer__box">
+                    <li class="footer__item">
+                        <span class="footer__heading">Послуги</span>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Спа-релакс</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Гірські прогулянки з гідом</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Гастрономічні враження</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Екскурсії та культурні заходи</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Гарячі пропозиції</a>
+                    </li>
+                </ul>
+                <ul class="footer__box">
+                    <li class="footer__item">
+                        <span class="footer__heading">Тарифи</span>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Вибір номерів та тарифів</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Знижки</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Меню ресторанів та страви</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Бронювання столів у ресторанах</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Розклад майстер-класів та реєстрація</a>
+                    </li>
+                </ul>
+                <ul class="footer__box">
+                    <li class="footer__item">
+                        <span class="footer__heading">Контакти</span>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Контакти та адреса</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Відгуки задоволених клієнтів</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Правила та політика конфіденційності</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Питання та відповіді</a>
+                    </li>
+                </ul>
+                <ul class="footer__box">
+                    <li class="footer__item">
+                        <span class="footer__heading">Стежте за нами</span>
+                    </li>
+                    <li class="footer__item">
+                        <a href="./about.html" class="footer__link">Про нас</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://www.facebook.com/" class="footer__link" target="_blank">Facebook</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://www.instagram.com/" class="footer__link" target="_blank">Instagram</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://twitter.com/" class="footer__link" target="_blank">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__bottom-box">
+                <p class="footer__copyright">
+                    Copyright <span class="footer__name">Rout Mountain</span> 2023
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/main.js"></script>
+    <script src="https://kit.fontawesome.com/950c43a68f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,499 @@
+.about-content {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(30, 1fr);
+  row-gap: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: $breakpoint-md) {
+    row-gap: 40px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm) {
+    row-gap: 35px;
+  }
+
+  @media screen and (max-width: $breakpoint-xs) {
+    row-gap: 30px;
+  }
+
+  @media screen and (max-width: $breakpoint-xxs) {
+    row-gap: 25px;
+  }
+}
+
+.banner--about,
+.parallax--about {
+  text-align: center;
+  background: url("../img/about/pattern_about_us.png") repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-color: lighten($additionalTextColor, 40%);
+  .banner__heading {
+    display: inline-block;
+    font-size: 2.2rem;
+    padding: 20px 5%;
+    background-color: rgba($additionalColor, $alpha: 0.9);
+    border: 2px solid $additionalTextColor;
+    border-radius: 20px;
+    box-shadow: 5px 10px 7px $additionalTextColor;
+    text-shadow: 5px 5px 7px $mainShadowColor;
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.desc {
+  padding: 20px 35px;
+  background-color: $additionalColor;
+  border-radius: 20px;
+  box-shadow: 5px 10px 7px darken($additionalColor, 10%);
+  color: $mainTextColor;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media screen and (max-width: $breakpoint-lg) {
+    padding: 20px 30px;
+    gap: 16px;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 20px 27px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm) {
+    padding: 18px 24px;
+  }
+
+  @media screen and (max-width: $breakpoint-xs) {
+    padding: 16px 21px;
+    gap: 10px;
+  }
+
+  @media screen and (max-width: $breakpoint-xxs) {
+    padding: 14px 18px;
+  }
+
+  grid-column: 3/15;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    grid-column: 2/15;
+  }
+
+  @media screen and (max-width: $breakpoint-xs) {
+    grid-column: 2/30;
+  }
+
+  &__heading {
+    text-align: center;
+    color: $additionalTextColor;
+    font-size: 1.2rem;
+
+    @media screen and (max-width: $breakpoint-lg) {
+        font-size: 1.1rem;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        font-size: 1.3rem;
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        font-size: 1.4rem;
+    }
+
+    @media screen and (max-width: $breakpoint-xxs) {
+        font-size: 1.5rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  &__heading--picture {
+    vertical-align: middle;
+    width: 30%;
+  }
+
+  &__reason {
+    &__heading {
+      color: $additionalTextColor;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      font-weight: 600;
+
+      @media screen and (max-width: $breakpoint-md) {
+        font-size: 1.3rem;
+      }
+
+      @media screen and (max-width: $breakpoint-sm) {
+        font-size: 1.2rem;
+      }
+
+      @media screen and (max-width: $breakpoint-xxs) {
+        font-size: 1.1rem;
+      }
+    }
+
+    &__item {
+      position: relative;
+      margin-bottom: 5px;
+      padding-left: 40px;
+
+      &::before {
+        content: "";
+        background: url("../img/fire-solid.svg") no-repeat center;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: 2px;
+        left: 20px;
+      }
+    }
+  }
+}
+
+.desc {
+  padding: 20px 35px;
+  background-color: $additionalColor;
+  border-radius: 20px;
+  box-shadow: 5px 10px 7px darken($additionalColor, 10%);
+  color: $mainTextColor;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media screen and (max-width: $breakpoint-lg) {
+    padding: 20px 30px;
+    gap: 16px;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 20px 27px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm) {
+    padding: 18px 24px;
+  }
+
+  @media screen and (max-width: $breakpoint-xs) {
+    padding: 16px 21px;
+    gap: 10px;
+  }
+
+  @media screen and (max-width: $breakpoint-xxs) {
+    padding: 14px 18px;
+  }
+}
+
+.teams {
+  justify-content: space-between;
+}
+
+.team__info {
+  display: grid;
+  justify-content: start;
+  gap: 20px;
+}
+
+.team {
+  &-1 {
+    grid-column: 1/6;
+
+    @media screen and (max-width: $breakpoint-md) {
+      grid-column: 2/16;
+    }
+
+    @media screen and (max-width: $breakpoint-xxs) {
+      grid-column: 2/30;
+      margin-inline: 0;
+    }
+  }
+
+  &-2 {
+    grid-column: 6/11;
+
+    @media screen and (max-width: $breakpoint-md) {
+      grid-column: 16/30;
+    }
+
+    @media screen and (max-width: $breakpoint-xxs) {
+      grid-column: 2/30;
+      margin-inline: 0;
+    }
+  }
+
+  &-3 {
+    grid-column: 11/16;
+
+    @media screen and (max-width: $breakpoint-md) {
+      grid-column: 2/16;
+    }
+
+    @media screen and (max-width: $breakpoint-xxs) {
+      grid-column: 2/30;
+      margin-inline: 0;
+    }
+  }
+
+  &-4 {
+    grid-column: 16/21;
+
+    @media screen and (max-width: $breakpoint-md) {
+      grid-column: 16/30;
+    }
+
+    @media screen and (max-width: $breakpoint-xxs) {
+      grid-column: 2/30;
+      margin-inline: 0;
+    }
+  }
+
+  &-5 {
+    grid-column: 21/26;
+
+    @media screen and (max-width: $breakpoint-md) {
+      grid-column: 2/16;
+    }
+
+    @media screen and (max-width: $breakpoint-xxs) {
+      grid-column: 2/30;
+      margin-inline: 0;
+    }
+  }
+
+  &-6 {
+    grid-column: 26/31;
+
+    @media screen and (max-width: $breakpoint-md) {
+      grid-column: 16/30;
+    }
+
+    @media screen and (max-width: $breakpoint-xxs) {
+      grid-column: 2/30;
+      margin-inline: 0;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 15px;
+    background-color: $mainTextColor;
+    text-decoration: none;
+    color: $contrastTextColor;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+
+    @media screen and (max-width: $breakpoint-sm) {
+      padding: 12px;
+    }
+
+    &:hover {
+      background-color: lighten($mainTextColor, 15%);
+    }
+  }
+}
+
+.hot-deals--about {
+  padding: 20px 35px;
+  background-color: $additionalColor;
+  border-radius: 20px;
+  box-shadow: 5px 10px 7px darken($additionalColor, 10%);
+  color: $mainTextColor;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+
+  /* Center horizontally */
+  @media screen and (max-width: $breakpoint-lg) {
+    padding: 20px 30px;
+    gap: 16px;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 20px 27px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm) {
+    padding: 18px 24px;
+  }
+
+  @media screen and (max-width: $breakpoint-xs) {
+    padding: 16px 21px;
+    gap: 10px;
+  }
+
+  @media screen and (max-width: $breakpoint-xxs) {
+    padding: 14px 18px;
+  }
+}
+
+.info--about {
+  padding: 20px 35px;
+  background-color: $additionalColor;
+  border-radius: 20px;
+  box-shadow: 5px 10px 7px darken($additionalColor, 10%);
+  color: $mainTextColor;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  grid-column: 17/29;
+  position: relative;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    grid-column: 17/30;
+  }
+
+  @media screen and (max-width: $breakpoint-xs) {
+    grid-column: 2/30;
+  }
+
+  &__holder {
+    display: flex;
+    overflow: hidden;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 100%;
+    gap: 20px;
+    transition: transform 0.3s linear;
+  }
+
+  &__heading {
+    color: $additionalTextColor;
+    font-size: 1.9rem;
+    text-align: center;
+
+    @media screen and (max-width: $breakpoint-lg) {
+      font-size: 1.8rem;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 1.7rem;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+      font-size: 1.4rem;
+    }
+
+    @media screen and (max-width: $breakpoint-xxs) {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__img {
+    width: 50%;
+    display: block;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__btn {
+    position: absolute;
+    font-weight: 700;
+    font-size: 3.5rem;
+    background: none;
+    border: none;
+    color: $additionalTextColor;
+    top: 50%;
+    text-shadow: 5px 10px 7px $mainShadowColor;
+    transform: translateY(-50%);
+    transition: 0.4s ease-in;
+    padding: 0;
+    z-index: 1;
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 2.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+      font-size: 1.8rem;
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+      font-size: 2.1rem;
+    }
+
+    @media screen and (max-width: $breakpoint-xxs) {
+      font-size: 1.9rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2) translateY(-42%);
+      background-color: lighten($additionalTextColor, 50%);
+
+      @media screen and (max-width: $breakpoint-md) {
+        transform: scale(1.1) translateY(-44%);
+      }
+    }
+
+    &--next {
+      right: 27px;
+
+      @media screen and (max-width: $breakpoint-md) {
+        right: -1px;
+      }
+
+      @media screen and (max-width: $breakpoint-xxs) {
+        right: -5px;
+      }
+    }
+
+    &--prev {
+      left: 27px;
+
+      @media screen and (max-width: $breakpoint-md) {
+        left: -1px;
+      }
+
+      @media screen and (max-width: $breakpoint-xxs) {
+        left: -5px;
+      }
+    }
+  }
+
+  &__btn-more {
+    padding: 15px 30px;
+    background-color: $mainTextColor;
+    text-decoration: none;
+    color: $contrastTextColor;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+    text-align: center;
+
+    &:hover {
+      background-color: lighten($mainTextColor, 15%);
+    }
+  }
+}
+// FORM

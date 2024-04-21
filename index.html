@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Туризм</title>
+    <meta name="description" content="Кращий відпочинок в України">
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__top-box">
+                <div class="header__logo">
+                    <a href="#" class="header__link">
+                        <img src="img/logo.png" alt="logo title" class="header__img" />
+                        <span class="header__title">Rout mountain</span>
+                    </a>
+                </div>
+                <div class="header__contacts">
+                    <a href="tel:380962222222" class="phone header__phone"> +38 (096) 222-22-22</a>
+                    <ul class="header__social">
+                        <li class="header__social__item">
+                            <a href="https://facebook.com/" class="header__social__link" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li class="header__social__item">
+                            <a href="https://instagram.com/" class="header__social__link" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li class="header__social__item">
+                            <a href="https://twitter.com/" class="header__social__link" target="_blank"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__toogle">
+                    <input type="checkbox" name="menu" id="header__menu" class="header__menu-check" />
+                    <label for="header__menu" class="header__menu-label">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <nav class="header__menu">
+                        <ul class="header__menu__list">
+                            <li class="header__menu__item">
+                                <a href="./pages/spa.html" class="header__menu__link">Спа-релакс</a>
+                            </li>
+                            <li class="header__menu__item">
+                                <a href="./pages/hiking.html" class="header__menu__link">Гірські прогулянки з гідом</a>
+                            </li>
+                            <li class="header__menu__item">
+                                <a href="./pages/gastronomic.html" class="header__menu__link">Гастрономічні враження</a>
+                            </li>
+                            <li class="header__menu__item">
+                                <a href="#" class="header__menu__link">Екскурсії та культурні заходи</a>
+                            </li>
+                            <li class="header__menu__item">
+                                <a href="./pages/about.html" class="header__menu__link">Про нас</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav__list">
+                    <li class="header__nav__item">
+                        <a href="./pages/spa.html" class="header__nav__link">Спа-релакс</a>
+                    </li>
+                    <li class="header__nav__item">
+                        <a href="./pages/hiking.html" class="header__nav__link">Гірські прогулянки з гідом</a>
+                    </li>
+                    <li class="header__nav__item">
+                        <a href="./pages/gastronomic.html" class="header__nav__link">Гастрономічні враження</a>
+                    </li>
+                    <li class="header__nav__item">
+                        <a href="#" class="header__nav__link">Екскурсії та культурні заходи</a>
+                    </li>
+                    <li class="header__nav__item"><a href="./pages/about.html" class="header__nav__link">Про нас</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="content">
+            <div class="banner">
+                <h2 class="banner__heading">Rout mountain</h2>
+                <p class="banner__text">Де природа, смаки і культура зливаються в незабутні враження!</p>
+            </div>
+            <div class="about">
+                <h2 class="about__heading">А тепер трішки про нас</h2>
+                <img src="img/about-us.webp" alt="about" class="about__img" />
+                <p class="about__text">
+                    Ми створюємо незабутні миті вашого відпочинку. Від розслаблення у спа-резортах та
+                    захопливих гірських прогулянок з гідами до відкриття смаків нашої традиційної кухні та
+                    культурних подорожей. Долучайтеся до наших майстер-класів і дізнайтесь більше про
+                    місцеві традиції. Подорожуйте, відкриваючи світ відпочинку та вдосконалення разом з
+                    нами.
+                </p>
+                <ul class="about__reason">
+                    <li class="about__reason__heading">Від нас</li>
+                    <li class="about__reason__item">Розслаблення та оновлення</li>
+                    <li class="about__reason__item">Пригода в горах</li>
+                    <li class="about__reason__item">Смаколики регіону</li>
+                    <li class="about__reason__item">Культурні враження</li>
+                </ul>
+            </div>
+            <div class="hot-deals" id="slider">
+                <h2 class="hot-deals__heading">Гарячі пропозиції</h2>
+                <button class="hot-deals__btn hot-deals__btn--next" id="nextButton">&#10095;</button>
+                <button class="hot-deals__btn hot-deals__btn--prev" id="prevButton">&#10094;</button>
+                <div class="hot-deals__holder">
+                    <div class="hot-deals__item slide">
+                        <img src="img/sceli.jpg" alt="hot deals extrime" class="hot-deals__img" />
+                        <h3 class="hot-deals__title">Екстремальні гірські випробування</h3>
+                        <p class="hot-deals__description">
+                            Для любителів пригод пропонуємо нові маршрути гірських прогулянок, які включають
+                            елементи альпінізму та скелелазіння - це виклик для справжніх природолюбів.
+                        </p>
+                        <p class="hot-deals__description">
+                            Екстремальні гірські випробування - це важкий та захопливий спосіб досліджувати
+                            гірські регіони та природу. Ця програма розроблена для тих, хто має високий рівень
+                            фізичної підготовки та бажання випробувати свої здібності в екстремальних умовах.
+                        </p>
+                        <a href="./pages/hiking.html" class="hot-deals__btn-more">Детальніше...</a>
+                    </div>
+                    <div class="hot-deals__item slide">
+                        <img src="img/eco.jpg" alt="hot deals eco" class="hot-deals__img" />
+                        <h3 class="hot-deals__title">Еко-ретрит серед природи</h3>
+                        <p class="hot-deals__description">
+                            Нова програма спа-релаксу, де ви зможете розслабитися в еко-дружному оточенні,
+                            об'єднуючи відпочинок з дбайливістю про природу.
+                        </p>
+                        <p class="hot-deals__description">
+                            Еко-ретрит серед природи - це спосіб насолоджуватися релаксацією та доглядом за
+                            собою, не забуваючи про важливість збереження природи та створення балансу між
+                            людиною та навколишнім середовищем.
+                        </p>
+                        <a href="#" class="hot-deals__btn-more">Детальніше...</a>
+                    </div>
+                    <div class="hot-deals__item slide">
+                        <img src="img/gastronom.jpg" alt="hot deals gastronom" class="hot-deals__img" />
+                        <h3 class="hot-deals__title">Індивідуальні гастрономічні майстер-класи</h3>
+                        <p class="hot-deals__description">
+                            Організовуйте особисті майстер-класи з наших шеф-кухарів та створюйте свої авторські
+                            страви.
+                        </p>
+                        <p class="hot-deals__description">
+                            Індивідуальні гастрономічні майстер-класи - це не тільки можливість навчитися
+                            готувати смачні страви, але і важливий досвід, який допоможе розширити ваші
+                            кулінарні знання та навички. Вони відкривають двері до світу кулінарного мистецтва
+                            та креативності.
+                        </p>
+                        <a href="./pages/gastronomic.html" class="hot-deals__btn-more">Детальніше...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="paralax">
+                <h2 class="banner__heading">Наші послуги</h2>
+            </div>
+            <div class="service service-1">
+                <img src="img/spa.jpg" alt="service spa" class="service__img" />
+                <h3 class="heading">Спа-релакс</h3>
+                <p class="description">
+                    Наш спа-релакс пропонує гостям незабутню можливість розслабитися та відновити енергію в
+                    оазі спокою і гармонії. Ви зможете насолоджуватися різноманітними спа-процедурами,
+                    масажами та релаксаційними сеансами в комфортному середовищі, де ваше фізичне та
+                    психічне здоров'я є нашим пріоритетом. Чарівне місце де ви можете побувати на одинці із
+                    собою.
+                </p>
+                <a href="./pages/spa.html" class="service__btn">Детальніше...</a>
+            </div>
+            <div class="service service-2">
+                <img src="img/gid.jpg" alt="service gid" class="service__img" />
+                <h3 class="heading">Гірські прогулянки з гідом</h3>
+                <p class="description">
+                    Наші гірські прогулянки з досвідченими гідами відкривають перед вами захоплюючий світ
+                    природи. Ви дізнаєтеся про унікальну рослинність та тваринний світ гірських регіонів,
+                    досліджуєте панорамні види, та отримуєте можливість насолодитися свіжим повітрям та
+                    фізичною активністю в унікальних природних локаціях.
+                </p>
+                <a href="./pages/hiking.html" class="service__btn">Детальніше...</a>
+            </div>
+            <div class="service service-3">
+                <img src="img/serv-gastronom.jpg" alt="service gastronom" class="service__img" />
+                <h3 class="heading">Гастрономічні враження</h3>
+                <p class="description">
+                    Наші ресторани, які спеціалізуються в традиційній кухні, запрошують вас на справжню
+                    гастрономічну подорож, де ви смакуватимете страви з найсвіжіших місцевих інгредієнтів та
+                    познайомитесь з національними кулінарними традиціями. Майстер-класи з готування
+                    дозволять вам вивчити секрети приготування страв під керівництвом наших шеф-кухарів.
+                </p>
+                <a href="./pages/gastronomic.html" class="service__btn">Детальніше...</a>
+            </div>
+            <div class="service service-4">
+                <img src="img/serv-ekskursia.jpg" alt="service ekskursia" class="service__img" />
+                <h3 class="heading">Екскурсії та культурні заходи</h3>
+                <p class="description">
+                    Ви відправитесь на захопливі екскурсії в місто Івано-Франківськ, де ви дізнаєтеся про
+                    історію та культуру регіону, відвідаєте пам'ятки та музеї, та відчуєте атмосферу
+                    української культури. Крім того, різноманітні майстер-класи, включаючи ліпку глечиків,
+                    вишивку, розмальовку яєць на Великдень та інші події залежно від сезону, дозволять вам
+                    активно взяти участь у місцевих традиціях та рукоділлі.
+                </p>
+                <a href="#" class="service__btn">Детальніше...</a>
+            </div>
+            <div class="paralax">
+                <h2 class="banner__heading">Відгуки наших клієнтів</h2>
+            </div>
+            <div class="response">
+                <div class="response__box active" id="response-1">
+                    <img src="img/ava.png" alt="avatar" class="response__img" />
+                    <div class="response__description">
+                        <h3 class="response__autor">Антон</h3>
+                        <p class="response__text">
+                            Ми обрали цей заклад для нашого сімейного відпочинку, і не можемо бути більш
+                            щасливими з нашого вибору. Спа-релакс дав нам можливість повністю розслабитися та
+                            забути про сторожкі повсякденні обов'язки. Гірські прогулянки з гідом були для нас
+                            справжньою відкриттям, оскільки ми дізналися багато цікавого про гірську природу та
+                            історію регіону. Гастрономічні враження перевершили всі наші очікування - страви
+                            були смачні та представлені в оригінальних формах. Екскурсія в Івано-Франківськ дала
+                            нам змогу поглибити знання про українську культуру, а майстер-класи стали цікавим
+                            додатком до нашого відпочинку.
+                        </p>
+                    </div>
+                </div>
+                <div class="response__box" id="response-2">
+                    <img src="img/ava.png" alt="avatar" class="response__img" />
+                    <div class="response__description">
+                        <h3 class="response__autor">Юля</h3>
+                        <p class="response__text">
+                            З моменту, коли я переступила поріг цього закладу, я відчула миттєву зручність та
+                            розкіш, яка супроводжувала мене протягом всього відпочинку. Спа-релакс був
+                            справжньою оазою спокою, де моє тіло та душа знайшли відпочинок. Гірські прогулянки
+                            були чудовим способом насолоджуватися природою та активно відпочивати. Гастрономічні
+                            враження виявилися надзвичайно смачними - кожна страва була справжнім шедевром.
+                            Екскурсії в Івано-Франківськ та майстер-класи були цікавими та освітніми, а їх
+                            різноманітність зробила наш відпочинок надзвичайно насиченим та цікавим.
+                        </p>
+                    </div>
+                </div>
+                <div class="response__box" id="response-3">
+                    <img src="img/ava.png" alt="avatar" class="response__img" />
+                    <div class="response__description">
+                        <h3 class="response__autor">Сергій</h3>
+                        <p class="response__text">
+                            Мій відпочинок у цьому закладі був найкращим відпочинком, який я коли-небудь
+                            досвідчував. Спа-релакс дозволив мені забути про всі турботи та розслабитися, а
+                            гірські прогулянки з гідом стали для мене справжньою пригодою. Гастрономічні
+                            враження залишили найсмачніші спогади, а майстер-класи дозволили мені вивчити різні
+                            народні мистецтва. Екскурсія в Івано-Франківськ дала мені можливість дізнатися
+                            більше про історію регіону. Цей заклад - справжній скарб для відпочинку та душевного
+                            вдосконалення.
+                        </p>
+                    </div>
+                </div>
+                <ul class="response-tabs">
+                    <li class="response-tabs__item">
+                        <a href="#response-1" class="response-tabs__link active"></a>
+                    </li>
+                    <li class="response-tabs__item">
+                        <a href="#response-2" class="response-tabs__link"></a>
+                    </li>
+                    <li class="response-tabs__item">
+                        <a href="#response-3" class="response-tabs__link"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="paralax">
+                <h2 class="banner__heading">Фотогалерея</h2>
+            </div>
+            <div class="photos photos-1">
+                <img src="img/about.jpg" alt="gory" class="photos__img" />
+            </div>
+            <div class="photos photos-2">
+                <img src="img/about.jpg" alt="gory" class="photos__img" />
+            </div>
+            <div class="photos photos-3">
+                <img src="img/about.jpg" alt="gory" class="photos__img" />
+            </div>
+            <div class="photos photos-4">
+                <img src="img/about.jpg" alt="gory" class="photos__img" />
+            </div>
+            <div id="lightboxModal" class="lightboxModal">
+                <button class="lightboxModal__close">&times;</button>
+                <button class="lightboxModal__arrow lightboxModal__arrow_prev">&#8249;</button>
+                <button class="lightboxModal__arrow lightboxModal__arrow_next">&#8250;</button>
+                <div class="lightboxModal__content">
+                    <div class="lightboxModal__slide">
+                        <img src="img/about.jpg" alt="gory" />
+                    </div>
+                    <div class="lightboxModal__slide">
+                        <img src="img/about.jpg" alt="gory" />
+                    </div>
+                    <div class="lightboxModal__slide">
+                        <img src="img/about.jpg" alt="gory" />
+                    </div>
+                    <div class="lightboxModal__slide">
+                        <img src="img/about.jpg" alt="gory" />
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__top-box">
+                <ul class="footer__box">
+                    <li class="footer__item">
+                        <span class="footer__heading">Послуги</span>
+                    </li>
+                    <li class="footer__item">
+                        <a href="./pages/spa.html" class="footer__link">Спа-релакс</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="./pages/hiking.html" class="footer__link">Гірські прогулянки з гідом</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="./pages/gastronomic.html" class="footer__link">Гастрономічні враження</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Екскурсії та культурні заходи</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Гарячі пропозиції</a>
+                    </li>
+                </ul>
+                <ul class="footer__box">
+                    <li class="footer__item">
+                        <span class="footer__heading">Тарифи</span>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Вибір номерів та тарифів</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Знижки</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="./pages/gastronomic.html" class="footer__link">Меню ресторанів та страви</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="./pages/gastronomic.html" class="footer__link">Бронювання столів у ресторанах</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="./pages/gastronomic.html" class="footer__link">Розклад майстер-класів та реєстрація</a>
+                    </li>
+                </ul>
+                <ul class="footer__box">
+                    <li class="footer__item">
+                        <span class="footer__heading">Контакти</span>
+                    </li>
+                    <li class="footer__item">
+                        <a href="./pages/about.html" class="footer__link">Контакти та адреса</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Відгуки задоволених клієнтів</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Правила та політика конфіденційності</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Питання та відповіді</a>
+                    </li>
+                </ul>
+                <ul class="footer__box">
+                    <li class="footer__item">
+                        <span class="footer__heading">Стежте за нами</span>
+                    </li>
+                    <li class="footer__item">
+                        <a href="./pages/about.html" class="footer__link">Про нас</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://facebook.com/" class="footer__link" target="_blank">Facebook</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://instagram.com/" class="footer__link" target="_blank">Instagram</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://twitter.com/" class="footer__link" target="_blank">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__bottom-box">
+                <p class="footer__copyright">
+                    Copyright <span class="footer__name">Rout Mountain</span> 2023
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/950c43a68f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

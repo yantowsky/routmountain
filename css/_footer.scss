@@ -1,0 +1,89 @@
+.footer {
+	background-color: $additionalColor;
+	display: flex;
+	flex-direction: column;
+	padding: 23px 0 0;
+	@media screen and (max-width: $breakpoint-lg) {
+		padding: 20px 0 0;
+	}
+	@media screen and (max-width: $breakpoint-md) {
+		padding: 17px 0 0;
+	}
+	@media screen and (max-width: $breakpoint-sm) {
+		padding: 14px 0 0;
+	}
+	@media screen and (max-width: $breakpoint-xs) {
+		padding: 10px 0 0;
+	}
+	&__top-box {
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 20px;
+		@media screen and (max-width: $breakpoint-xs) {
+			margin-bottom: 0;
+			flex-wrap: wrap;
+		}
+	}
+	&__bottom-box {
+		background-color: $mainColor;
+		padding: 15px;
+		text-align: center;
+		color: $additionalTextColor;
+		font-size: 1rem;
+		@media screen and (max-width: $breakpoint-lg) {
+			padding: 10px;
+			font-size: 0.8rem;
+		}
+		@media screen and (max-width: $breakpoint-md) {
+			padding: 8px;
+			font-size: 0.7rem;
+		}
+	}
+	&__heading {
+		color: $additionalTextColor;
+		font-size: 1.5rem;
+		display: block;
+		margin-bottom: 12px;
+		font-weight: 600;
+		@media screen and (max-width: $breakpoint-lg) {
+			font-size: 1.4rem;
+		}
+		@media screen and (max-width: $breakpoint-md) {
+			font-size: 1.3rem;
+		}
+		@media screen and (max-width: $breakpoint-sm) {
+			font-size: 1.2rem;
+		}
+		@media screen and (max-width: $breakpoint-xs) {
+			font-size: 1.1rem;
+		}
+	}
+	&__link {
+		display: block;
+		color: $additionalTextColor;
+		font-size: 1rem;
+		margin-bottom: 5px;
+		transition: all 0.5s ease;
+		@media screen and (max-width: $breakpoint-md) {
+			font-size: 0.9rem;
+		}
+		&:hover {
+			color: lighten($additionalTextColor, 30%);
+			text-decoration: underline;
+		}
+	}
+	&__box {
+		// width: 20%;
+		@media screen and (max-width: $breakpoint-md) {
+			width: 20%;
+			margin-bottom: 20px;
+		}
+		@media screen and (max-width: $breakpoint-xs) {
+			width: 42%;
+			margin-bottom: 20px;
+		}
+	}
+	&__name {
+		text-transform: uppercase;
+	}
+}
